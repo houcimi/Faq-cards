@@ -1,5 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    /* Text Colors */
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+    /* Background gradient */
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    /* Deviders */
+    --light-grayish-blue: hsl(240, 5%, 91%);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-image: linear-gradient(var(--soft-violet) , var(--soft-blue));
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 900px;
+    padding-bottom: 50px;
+}
+.container .left {
+    flex-basis: 45%;
+}
+
+.container .right {
+    flex-basis: 45%;
+    padding-top: 50px;
+    padding-right: 60px;
+}
+.container .right h1 {
+    margin-bottom: 30px;
+}
+
+.container .right .faq > h2 {
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 400;
+    border-bottom: 1px solid var(--light-grayish-blue);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+
+.container .right .faq h2 > span {
+    float: right;
+}
+.container .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.container .left img {
+    position: absolute;
+}
+.container .left .box img {
+    position: absolute;
+    left: -41px;
+    top: 39%;
+}
+.container .left {
+    background-image: url('/images/bg-pattern-desktop.svg');
+    background-position: center;
 }
